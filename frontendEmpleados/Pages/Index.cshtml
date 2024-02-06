@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "CRUD Empleados";
+}
+
+<div class="container-fluid">
+    <p>
+        <a asp-page="Create" class="btn btn-primary">Agregar Empleado</a>
+        <a asp-page="./Edit" class="btn btn-success">Editar Empleado</a>
+        <a asp-page-handler="Delete" asp-route-id="" class="btn btn-danger">Eliminar Empleado</a>
+    </p>
+<div class="text-center">
+     <table class="table">
+         <thead>
+           <tr>
+             <th>id</th>
+             <th>Nombre</th>
+             <th>Edad</th>
+             <th>Departamento</th>
+             <th>Cargo</th>
+             <th>Genero</th>
+             <th>Salario</th>
+          </tr>
+         </thead>
+         <tbody>
+           
+        </tbody>
+    </table>
+</div>
+</div>
